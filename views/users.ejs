@@ -1,0 +1,31 @@
+<%- include('./header')-%>
+    <div class="container">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th scope="col">id</th>
+                    <th scope="col">name</th>
+                    <th scope="col">email</th>
+                    <th scope="col">phone</th>
+                </tr>
+            </thead>
+            <tr>
+                <%userArr.forEach(user=> {%>
+            <tr>
+                <td>
+                    <%= user.Personid %>
+                </td>
+                <td>
+                    <%= user.Name %>
+                </td>
+                <td>
+                    <%= user.Email %>
+                </td>
+                <td>
+                    <%= user.Phone %>
+                </td>
+                <%});%>
+            </tr>
+            </tr>
+        </table>
+    </div>
